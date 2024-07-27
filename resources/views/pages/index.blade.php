@@ -488,69 +488,29 @@
             <div class="f-testimonial-background"></div>
             <div class="f-container-regular">
                 <div class="f-testimonial-card-wrapper">
+                    @foreach ($comment as $data)
                     <div class="f-testimonial-outline-fixed">
                         <div class="f-margin-bottom-16">
-                            <h6 class="f-h6-heading">&quot;High level mentorship&quot;</h6>
+                            <h6 class="f-h6-heading">&quot;{{$data->title}}&quot;</h6>
                         </div>
                         <div class="f-margin-bottom-32">
                             <p class="f-paragraph-small">
                                 <span class="f-text-weight-medium">
-                                    <em>One of the biggest challenges sport performance coaches face is interpreting and applying emerging research into their programs. APC combines a comprehensive summary of current research related to the most impactful areas of sport performance with high level mentorship and an incredible community of coaches across sports looking to get better. Ramsey has created a much-needed opportunity for coaches at all levels to continue pushing their development.</em>
+                                    <em>{{$data->comment}}</em>
                                 </span>
                             </p>
                         </div>
                         <div class="f-tåestimonial-author">
                             <div class="f-testimonial-avatar-small">
-                                <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/639b271b1baaeac02fe61086_A18kqHf%2BM8L%20(1).png" loading="lazy" alt="" class="f-avatar-image"/>
+                                <img src="" loading="lazy" alt="" class="f-avatar-image"/>
                             </div>
                             <div>
-                                <p class="f-paragraph-regular f-text-weight-medium">Kevin Neeld PhD</p>
-                                <div class="f-paragraph-small">Bostin Bruins, NHL</div>
+                                <p class="f-paragraph-regular f-text-weight-medium">{{$data->owner_name}}</p>
+                                <div class="f-paragraph-small">{{$data->owner_status}}</div>
                             </div>
                         </div>
                     </div>
-                    <div class="f-testimonial-outline-fixed">
-                        <div class="f-margin-bottom-16">
-                            <h6 class="f-h6-heading">&quot;Undeniable Passion&quot;</h6>
-                        </div>
-                        <div class="f-margin-bottom-32">
-                            <p class="f-paragraph-small">
-                                <span class="f-text-weight-medium">
-                                    <em>During the time that I have known Ramsey, what sticks out to me is his undeniable passion for helping others and a dedicated pursuit of self-development. These traits are infectious in the way he communicates and interacts with others. I had the privilege of participating in the APC cohort this year and was impressed by the attention to detail. This program is not for the faint of heart, but if you desire to progress yourself in your current role or profession, this is it. Whether you’re an up and coming professional or a seasoned coach, associating yourself with Ramsey and the APC will challenge you to grow. What I appreciate the most is the culture engrained in the program, coaches uplifting and helping one another. Ultimately, this is what it is all about, and you don’t want to miss out.</em>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="f-testimonial-author">
-                            <div class="f-testimonial-avatar-small">
-                                <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/639b2397f0c6c2ce5e309984_mls%20(1).png" loading="lazy" alt="" class="f-avatar-image"/>
-                            </div>
-                            <div>
-                                <p class="f-paragraph-regular f-text-weight-medium">Joey Harty</p>
-                                <div class="f-paragraph-small">Sporting KC, MLS</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="f-testimonial-outline-fixed">
-                        <div class="f-margin-bottom-16">
-                            <h6 class="f-h6-heading">&quot;Must-have course&quot;</h6>
-                        </div>
-                        <div class="f-margin-bottom-32">
-                            <p class="f-paragraph-small">
-                                <span class="f-text-weight-medium">
-                                    <em>Applied Performance Coach is a must-have course for anyone looking to further their practical education using evidence-based means. Coach Ramsey provides foundational source material on all subject matter with a thought-provoking weekly lecture that welcomes open dialogue among all coaches in real time. There’s high quality, applicable information to be gained for new and veteran coaches alike by joining Team APC.</em>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="f-testimonial-author">
-                            <div class="f-testimonial-avatar-small">
-                                <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/639b243428159fdec049eaa6_OQVXzZ9a_400x400.jpeg" loading="lazy" alt="" class="f-avatar-image"/>
-                            </div>
-                            <div>
-                                <p class="f-paragraph-regular f-text-weight-medium">Andy King</p>
-                                <div class="f-paragraph-small">San Francisco Giants, MLB</div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

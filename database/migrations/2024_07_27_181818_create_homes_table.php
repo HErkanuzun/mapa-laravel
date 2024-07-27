@@ -11,15 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comments', function (Blueprint $table) {
+        Schema::create('homes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('title',150);
-            $table->string('comment')->nullable();
-            $table->string('image')->nullable();
-            $table->string('owner_name')->nullable();
-            $table->string('owner_status')->nullable();
-            
         });
     }
 
@@ -28,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('comments');
+        Schema::dropIfExists('homes');
     }
 };

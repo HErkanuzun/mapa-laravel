@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use CommentController;
-
+use App\Http\Controllers\CommentController;
+use App\Http\Controllers\HomeController;
 
 Route::middleware([
     'auth:sanctum',
@@ -17,7 +17,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/comment/index', [Commentcontroller::class, 'index'])->name('index');
-Route::get('/comment/create', [Commentcontroller::class, 'create'])->name('create');
-Route::get('/comment/store', [Commentcontroller::class, 'store'])->name('store');
-Route::get('/comment/destroy', [Commentcontroller::class, 'destroy'])->name('destroy');
+Route::get('/', [HomeController::class, 'index'])->name('index');
+
+
+Route::get('/dasboard/comment/index', [CommentController::class, 'index'])->name('comment_index');
+Route::get('/dasboard/comment/create', [CommentController::class, 'create'])->name('comment_create');
+Route::post('/dasboard/comment/store', [CommentController::class, 'store'])->name('comment_store');
+Route::get('/dasboard/comment/destroy/{id}', [CommentController::class, 'destroy'])->name('comment_destroy');
+
