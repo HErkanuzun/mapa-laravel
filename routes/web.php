@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MailController;
+use App\Mail\TestMail;
 
 Route::middleware([
     'auth:sanctum',
@@ -17,8 +19,10 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('index');
 
+Route::post('/sendemail', [MailController::class, 'sendContactEmail'])->name('sendContactEmail');
+
+Route::get('/', [HomeController::class, 'index'])->name('index');
 
 Route::get('/dasboard/comment/index', [CommentController::class, 'index'])->name('comment_index');
 Route::get('/dasboard/comment/create', [CommentController::class, 'create'])->name('comment_create');

@@ -477,6 +477,7 @@
 
     </div>
 </div>
+@if (count($comment)>0)
 <div id="testimonials" data-w-id="dcdb91c3-0515-b9d6-4765-6ad8bba2c49b" class="x-section is-dark">
     <div class="container testimonials">
         <div data-is-ix2-target="1" class="heart-lottie" data-w-id="1f7160a1-b679-877e-c316-84561b5aada1" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63d9087d5704611ca3282a96_Comp%201%20(1).json" data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="6" data-duration="0" data-ix2-initial-state="0"></div>
@@ -502,7 +503,9 @@
                         </div>
                         <div class="f-tåestimonial-author">
                             <div class="f-testimonial-avatar-small">
-                                <img src="" loading="lazy" alt="" class="f-avatar-image"/>
+                                @if($data->image)
+                                <img style="height: 35px; aspect-ratio:1/1;" src="{{ Storage::url($data->image) }}" alt="{{ $data->title }}">
+                                @endif
                             </div>
                             <div>
                                 <p class="f-paragraph-regular f-text-weight-medium">{{$data->owner_name}}</p>
@@ -516,6 +519,7 @@
         </div>
     </div>
 </div>
+@endisset
         <div id="section5" class="f-section-large">
             <div class="f-contact-content">
                 <div class="the-course-div">
@@ -530,18 +534,19 @@
                     </h1>
                 </div>
                 <div class="form-block w-form">
-                    <form id="wf-form-Contact-Form-2" name="wf-form-Contact-Form-2" data-name="Contact Form" method="get" class="f-contact-form" data-wf-page-id="63c002148e38eb3240449f38" data-wf-element-id="d5128b28-e07b-767e-6a8f-99386bfab850">
+                    <form action="{{ route('sendContactEmail') }}" method="POST" id="wf-form-Contact-Form-2" name="wf-form-Contact-Form-2" data-name="Contact Form" class="f-contact-form" data-wf-page-id="63c002148e38eb3240449f38" data-wf-element-id="d5128b28-e07b-767e-6a8f-99386bfab850">
+                        @csrf
                         <div class="f-margin-bottom-49">
-                            <label for="Name" class="f-field-label">İsim</label>
-                            <input class="f-field-input w-input" maxlength="256" name="Name" data-name="Name" placeholder="" type="text" id="Name"/>
+                            <label for="name" class="f-field-label">İsim</label>
+                            <input class="f-field-input w-input" maxlength="256" name="name" data-name="Name" placeholder="" type="text" id="name"/>
                         </div>
                         <div class="f-margin-bottom-49">
-                            <label for="Email-Address" class="f-field-label">Email Adres</label>
-                            <input class="f-field-input w-input" maxlength="256" name="Email-Address" data-name="Email Address" placeholder="" type="email" id="Email-Address" required=""/>
+                            <label for="email" class="f-field-label">Email Adres</label>
+                            <input class="f-field-input w-input" maxlength="256" name="email" data-name="email" placeholder="" type="email" id="email" required=""/>
                         </div>
                         <div class="f-margin-bottom-49">
                             <label for="Contact-Message" class="f-field-label">Mesaj</label>
-                            <textarea id="Contact-Message" name="Contact-Message" maxlength="5000" data-name="Contact Message" placeholder="" class="f-text-area w-input"></textarea>
+                            <textarea id="content" name="content" maxlength="5000" data-name="Contact Message" placeholder="" class="f-text-area w-input"></textarea>
                         </div>
                         <input type="submit" data-wait="Please wait..." class="f-button-neutral w-button" value="Gönder"/>
                     </form>

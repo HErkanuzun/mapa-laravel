@@ -15,7 +15,6 @@ class CommentController extends Controller
     {
         $commentdata = Comment::all();
 
-        $img = $commentdata[0]->image;
 
  
 
@@ -45,7 +44,7 @@ class CommentController extends Controller
         $commentdata -> owner_status= $request->owner_status;
         if($request->file('image'))
         {
-            $commentdata->image=$request->file('image')->store('image');
+            $commentdata->image=$request->file('image')->store('image','public');
         }
         $commentdata->save();
 

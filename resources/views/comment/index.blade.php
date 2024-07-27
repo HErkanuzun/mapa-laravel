@@ -57,8 +57,8 @@
                 </td>
                 <td class="px-6 py-4">
                     @if($item->image)
-                    <img src="{{Storage::url($item->image)}}" alt="{{ $item->title }}">
-                @endif
+                    <img style="height: 35px; aspect-ratio:1/1;" src="{{ Storage::url($item->image) }}" alt="{{ $item->title }}">
+                    @endif
                 </td>
                 <td class="px-6 py-4">
                     {{$item->owner_name}}
