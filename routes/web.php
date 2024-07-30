@@ -29,3 +29,8 @@ Route::get('/dasboard/comment/create', [CommentController::class, 'create'])->na
 Route::post('/dasboard/comment/store', [CommentController::class, 'store'])->name('comment_store');
 Route::get('/dasboard/comment/destroy/{id}', [CommentController::class, 'destroy'])->name('comment_destroy');
 
+
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
+

@@ -13,7 +13,6 @@
     <meta content="summary_large_image" name="twitter:card"/>
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="{{asset('assets')}}/css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('assets')}}/css/cstm.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
