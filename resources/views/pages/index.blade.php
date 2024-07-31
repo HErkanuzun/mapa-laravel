@@ -588,10 +588,10 @@
                                     <form  action="{{ route('create') }}" method="POST" id="sub-form" name="sub form" data-name="Sub Form" class="f-contact-form" data-wf-page-id="63c002148e38eb3240449f38" data-wf-element-id="d5128b28-e07b-767e-6a8f-99386bfab850">
                                         @csrf
                                         <input class="rl-form-input w-input" maxlength="256" name="subemail" data-name="subemail" placeholder="Email Adresinizi Girin" type="email" id="subemail" required=""/>
-                                    <div class="sub__wrapper">
-                                        <a style="cursor: pointer" onclick="document.getElementById('sub-form').submit()"><span>Abone Ol!</span></a>
-                                    </div>
-                                
+                                    
+                                        <div class="sub__wrapper">
+                                            <a style="cursor: pointer" onclick="document.getElementById('sub-form').submit()"><span>Abone Ol!</span></a>
+                                        </div>
                                     </form>
                                     <div class="rl_footer1_spacing-block-3"></div>
                                     <div class="rl-text-style-tiny">Abone olarak Serhat Güneş'ten güncellemeler almayı kabul etmiş olursunuz.</div>
