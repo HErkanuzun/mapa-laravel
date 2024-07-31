@@ -26,13 +26,7 @@ html {
     display: none;
   }
   
-  a {
-    background-color: rgba(0, 0, 0, 0);
-  }
-  
-  a:active, a:hover {
-    outline: 0;
-  }
+
   
   abbr[title] {
     border-bottom: 1px dotted;
@@ -6099,7 +6093,7 @@ html {
     
   }
   
-  .nav-ul-li a:focus, a:hover {
+  .nav-ul-li a:focus, .nav-ul-li a:hover {
     padding: 5px 7px;
     color: var(--midnight-blue-2) !important;
     border-color: rgba(255,255,255,1);
@@ -6132,51 +6126,10 @@ html {
     transition: max-height .3s,border-color 0s;
   }
   
-  .nav-ul-li a::focus::before, a:hover::before, a:focus::after, a:hover::after {
+  .nav-ul-li a::focus::before,.nav-ul-li a:hover::before, a:focus::after, .nav-ul-li a:hover::after {
     max-height: 100%;
     transition-delay: .28s;
     border-color: rgba(255,255,255,1);
-  }
-
-  
-  .sub__wrapper > a{
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-  }
-  
-  .sub__wrapper > a span{
-    position: relative;
-    z-index: 2;
-  }
-  
-  .sub__wrapper > a:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #ff003b;
-    transition: all .35s;
-  }
-  
-  .sub__wrapper > a:hover{
-    color: #fff;
-  }
-  
-  .sub__wrapper > a:hover:after{
-    width: 100%;
   }
   
   .league-logos-div {
@@ -8571,3 +8524,58 @@ html {
     font-style: normal;
     font-display: swap;
   }
+
+
+
+
+
+
+
+  /* CSS */
+  .button-55 {
+    margin-top: 5px;
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-55:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .button-55:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+
+
+
+
+
+  
