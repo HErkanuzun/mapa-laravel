@@ -20,4 +20,23 @@ class MailController extends Controller
 
         return redirect()->back()->with('formmessage', 'Formunuz başarıyla gönderildi!');
     }
+    public function sendInfoEmail(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'experience' => 'required|numeric',
+            'sector' => 'required|string|max:255',
+            'infoSource' => 'required|string',
+            'interestReason' => 'required|string|max:5000',
+            'hindrance' => 'required|string|max:5000',
+        ]);
+
+        try {
+            Mail::to('example@example.com')->send(new FormSubmitted($validated));
+            return back()->with('successmessage', 'Formunuz başarıyla gönderildi!');
+        } catch (\Exception $e) {
+            return back()->with('errormessage', 'Form gönderilirken bir hata oluştu.');
+        }
+    }
 }

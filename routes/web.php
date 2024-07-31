@@ -21,6 +21,7 @@ Route::middleware([
 Route::post('/', [HomeController::class, 'index'])->name('index');
 
 Route::post('/sendemail', [MailController::class, 'sendContactEmail'])->name('sendContactEmail');
+Route::post('/sendinfomail', [MailController::class, 'sendInfoEmail'])->name('sendInfoEmail');
 Route::post('/sendmailto', [HomeController::class, 'create'])->name('create');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
