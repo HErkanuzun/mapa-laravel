@@ -15,12 +15,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
-Route::get('/', function () {
-    return view('index');
-});
 
+
+
+Route::post('/', [HomeController::class, 'index'])->name('index');
 
 Route::post('/sendemail', [MailController::class, 'sendContactEmail'])->name('sendContactEmail');
+Route::post('/sendmailto', [HomeController::class, 'create'])->name('create');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
 
@@ -28,6 +29,7 @@ Route::get('/dasboard/comment/index', [CommentController::class, 'index'])->name
 Route::get('/dasboard/comment/create', [CommentController::class, 'create'])->name('comment_create');
 Route::post('/dasboard/comment/store', [CommentController::class, 'store'])->name('comment_store');
 Route::get('/dasboard/comment/destroy/{id}', [CommentController::class, 'destroy'])->name('comment_destroy');
+
 
 
 Route::fallback(function () {

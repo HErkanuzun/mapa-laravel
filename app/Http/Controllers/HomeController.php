@@ -1,11 +1,16 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\FormSubmitted;
+use App\Mail\Subemail;
+
 use App\Models\Home;
 use App\Models\Comment;
+use App\Models\Email;
 
 class HomeController extends Controller
 {
@@ -23,9 +28,24 @@ class HomeController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        if($request->subemail=='')
+            return redirect()->back()->with('errormessage', 'Mail adres alanı boş bırakılamaz');
+        
+        $existingEmail = Email::where('subemail', $request->subemail)->first();
+
+        if ($existingEmail) {
+            return redirect()->back()->with('errormessage', 'Email zaten kayıt edılmış');
+        }
+
+        $emaildata = new Email;
+        $emaildata->subemail = $request->subemail;
+        $emaildata->save();
+
+        Mail::to($request->subemail)->send(new Subemail(['email' => $request->subemail]));
+
+        return redirect()->back()->with('submessage', 'Record updated.');
     }
 
     /**
@@ -33,7 +53,7 @@ class HomeController extends Controller
      */
     public function store(StoreHomeRequest $request)
     {
-        //
+        
     }
 
     /**

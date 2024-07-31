@@ -18,6 +18,6 @@ class MailController extends Controller
 
         Mail::to('herkanuzun@gmail.com')->send(new FormSubmitted($validated));
 
-        return back()->with('success', 'Formunuz başarıyla gönderildi!');
+        return redirect()->back()->with('formmessage', 'Formunuz başarıyla gönderildi!');
     }
 }

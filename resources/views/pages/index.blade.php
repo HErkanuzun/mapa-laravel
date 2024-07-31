@@ -64,21 +64,32 @@
     };
     </script>
 </head>
-<body class="body">
+<body class="body"> 
     <div data-animation="default" class="nav to-hide w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="tiny" style="opacity:0" data-w-id="540b89c0-9999-f3ca-6913-eed00d729269" role="banner" data-duration="400">
         <div class="rl_navbar2_container">
             <nav role="navigation" id="w-node-_540b89c0-9999-f3ca-6913-eed00d72926d-40449f38" class="rl_navbar2_menu is-page-height-tablet w-nav-menu">
                 <a href="#" aria-current="page" class="rl_navbar2_link w-nav-link w--current">
-                    <img src="{{asset('assets')}}/img/mapa-logo-beyaz.png" style="width:10vh;height:10vh">    
+                    <img class="logo" src="{{asset('assets')}}/img/mapa-logo-beyaz.png">    
                 </a>
             </nav>
-            <div id="w-node-_540b89c0-9999-f3ca-6913-eed00d729280-40449f38" class="rl_navbar2_button-wrapper">
-                <a href="#section1" class="rl_navbar2_link w-nav-link">Çalışma Şartları</a>
-                <a href="#section2" class="rl_navbar2_link w-nav-link">Hakkımda</a>
-                <a href="#section3" class="rl_navbar2_link w-nav-link">Program Hakkında</a>
-                <a href="#section4" class="rl_navbar2_link w-nav-link">Programın Hedefleri</a>
-                <a href="#section5" class="rl_navbar2_link w-nav-link">İletişim</a>
-                <a href="mailto:Sccoachgunes@gmail.com" target="_blank" class="rl_navbar2_button w-button">Hemen Baslayin</a>
+            <div class="nav_wrapper">
+                <ul class="nav-ul">
+                    <li class="nav-ul-li">
+                      <a href="#section1" data-text="Çalışma Şartları">Çalışma Şartları</a>
+                    </li>
+                    <li class="nav-ul-li">
+                      <a href="#section2" data-text="Hakkımda">Hakkımda</a>
+                    </li>
+                    <li class="nav-ul-li">
+                      <a href="#section3" data-text="Program Hakkında">Program Hakkında</a>
+                    </li>
+                    <li class="nav-ul-li">
+                      <a href="#section4" data-text="Programın Hedefleri">Programın Hedefleri</a>
+                    </li>
+                    <li class="nav-ul-li">
+                      <a href="#section5" data-text="İletişim">İletişim</a>
+                    </li>
+                </ul>
                 <div class="rl_navbar2_menu-button w-nav-button">
                     <div class="rl_menu-icon2">
                         <div class="rl_menu-icon2_line-top"></div>
@@ -110,10 +121,10 @@
                     <p data-w-id="0114b172-b1b4-16f2-204b-21aeddbe5e33" style="-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="hero-subheading">
                         6-haftalik yogun mentorluk programimiz ile kariyerinize herkesten onde baslayin,
                     
-                        alana etki edip farkinizi gosterin, modern atletik performans antrenoru olma yolunda hizinizi katlayin.
+                        alana etki edip farkinizi gosterin, modern atletik performans antrenörü olma yolunda hizinizi katlayin.
                     </p>
                     <div class="hero-button-div">
-                        <a data-w-id="00546495-6c71-48dd-5197-d40eb8c72618" style="-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="mailto:Sccoachgunes@gmail.com" target="_blank" class="hero-cta w-button">Hemen Baslayin</a>
+                        <a data-w-id="00546495-6c71-48dd-5197-d40eb8c72618" style="-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="#section5" target="_blank" class="hero-cta w-button">Hemen Baslayin</a>
                         <p data-w-id="3739c08b-02b2-977c-b3b2-90124a2fdb09" style="opacity:0" class="cohort-p">2024 Sonbahar  Donemi Programi Eylul baslayacaktir.</p>
                         <div data-w-id="f3e07772-a776-209f-9389-1bd4d21031e5" class="hero-sparkle" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63e02af10c95fc0f102c1147_%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%8C%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%202%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.469135701899179" data-duration="0"></div>
                     </div>
@@ -232,16 +243,16 @@
             <div class="x-container">
                 <div  class="the-course-div">
                     <div class="blue-pill center">PROGRAM HAKKINDA</div>
-                    <h1 class="course-heading">Modern Atletik Performans Antrenoru Programi</h1>
+                    <h1 class="course-heading">Modern Atletik Performans antrenörü Programi</h1>
                     <p class="paragraph-text">
-                        <strong>MAPA programı, sporun her düzeyindeki 10 yılı aşkın antrenorluk tecrubemi, 6 haftalık, interaktif, enerjik canlı çevrimiçi bir mentorluge yoğunlaştırıyor.</strong>
+                        <strong>MAPA programı, sporun her düzeyindeki 10 yılı aşkın antrenörluk tecrubemi, 6 haftalık, interaktif, enerjik canlı çevrimiçi bir mentorluge yoğunlaştırıyor.</strong>
                         <br/>
                         Yolculuğum boyunca bir antrenör olarak başarılı olmanın anahtarı olduğunu düşündüğüm iki ana alana odaklandım:
                          Birincisi uzmanliğimizla ilgili teorik bilgiyi artırmak, 
                          ikincisi ise bu bilgiyi pratikte nasıl uygulayacağımda uzmanlaşmak.
                         <br/>
                         <br/>
-                        Kariyerim boyunca antrenman bilimiyle ilgili teoriye ya da daha iyi antrenorluğe odaklanan pek çok ders aldım. Cogu zaman hiçbir uygulama olmadan teoriye boğuldum veya arka plan teorisi olmayan bir şeyin nasıl uygulanacağını anlayamadim.
+                        Kariyerim boyunca antrenman bilimiyle ilgili teoriye ya da daha iyi antrenörluğe odaklanan pek çok ders aldım. Cogu zaman hiçbir uygulama olmadan teoriye boğuldum veya arka plan teorisi olmayan bir şeyin nasıl uygulanacağını anlayamadim.
                         <br/>
                         <br/>
                         ‍<span class="bridgespan">
@@ -270,7 +281,7 @@
                         <br/>
                         <span class="green-highlight"></span>
                         <br/>
-                        Programin  her bolumu, becerilerinizin farklı bir unsurunu geliştirmek ve öğrenme ile uygulama arasındaki boşluğu kapatmak için tasarlanmıştır.
+                        Programin  her bölümü, becerilerinizin farklı bir unsurunu geliştirmek ve öğrenme ile uygulama arasındaki boşluğu kapatmak için tasarlanmıştır.
                         <br/>
                         <br/>
                         <span class="green-highlight"></span>
@@ -294,7 +305,7 @@
             <div class="x-section is-dark no-gradient">
     <div id="section4" class="x-container">
         <div  class="whats-in-div">
-            <div class="blue-pill center">Programin hedefleri</div>
+            <div class="blue-pill center">Programın hedefleri</div>
             <p class="paragraph-text white">
                 -&gt; 
                 <span class="not4u1">Türk spor camiasına daha kalifiye atletik performans antrenörleri sağlamak.</span>
@@ -339,7 +350,7 @@
                             <img src="https://cdn.prod.website-files.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" loading="lazy" alt="" class="image-4"/>
                         </div>
                         <div class="standard-grid-text white w-richtext">
-                            <p> ⁠Ihtiyaç Analizi ve Testler</p>
+                            <p> ⁠İhtiyaç Analizi ve Testler</p>
                         </div>
                     </div>
                     <div class="green-tick-list-item top">
@@ -347,7 +358,7 @@
                             <img src="https://cdn.prod.website-files.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" loading="lazy" alt="" class="image-4"/>
                         </div>
                         <div class="standard-grid-text white w-richtext">
-                            <p>Isinma, Hiz, Çabukluk ve Çeviklik UygulamalarI</p>
+                            <p>Isinma, Hız, Çabukluk ve Çeviklik UygulamalarI</p>
                         </div>
                     </div>
                     <div class="green-tick-list-item top">
@@ -355,7 +366,7 @@
                             <img src="https://cdn.prod.website-files.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" loading="lazy" alt="" class="image-4"/>
                         </div>
                         <div class="standard-grid-text white w-richtext">
-                            <p>⁠Bireysel Kuvvet AntrenmanI Planlamak</p>
+                            <p>⁠Bireysel Kuvvet Antrenmanı Planlamak</p>
                         </div>
                     </div>
                     <div class="green-tick-list-item top">
@@ -363,7 +374,7 @@
                             <img src="https://cdn.prod.website-files.com/627e6dcd037d539700a60cd6/6282831fc2447d567db77af0_green%20tick.svg" loading="lazy" alt="" class="image-4"/>
                         </div>
                         <div class="standard-grid-text white w-richtext">
-                            <p>Modern Kondisyon Uygulamalari</p>
+                            <p>Modern Kondisyon Uygulamaları</p>
                         </div>
                     </div>
                     <div class="green-tick-list-item top">
@@ -399,8 +410,8 @@
 </div>
 <div class="x-section">
     <div class="x-container">
-        <div class="h1" style="text-align: center; padding-bottom:3em;">
-            <div class="blue-pill center larger">Bu program bittiginde neler kazanmis olacaksiniz?</div>
+        <div style="text-align: center; padding-bottom:3em;">
+            <div class="blue-pill center">Bu program bittiğinde neler kazanmiş olacaksınız?</div>
         </div>
         <div class="line-break darker"></div>
         <div class="w-layout-grid details-grid end-of-course">
@@ -445,7 +456,7 @@
                             <p>
                                 <strong>⁠Topluluğunuzu bulun</strong>
                             </p>
-                            <p>Kendilerini ve çevrelerindekileri daha büyük başarıya taşımak için hepsi aynı arzuyla motive olan bir antrenorler topluluğuna katılacaksınız.</p>
+                            <p>Kendilerini ve çevrelerindekileri daha büyük başarıya taşımak için hepsi aynı arzuyla motive olan bir antrenörler topluluğuna katılacaksınız.</p>
                         </div>
                     </div>
                     <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f33-40449f38" class="standard-grid-card">
@@ -456,7 +467,7 @@
                             <p>
                                 <strong>5.⁠ ⁠Fırsatlarınızı Genişletin</strong>
                             </p>
-                            <p>Her ligde performans antrenorlugu olanaklarina başvurmak için benzersiz bir konumda olacak ve bu rekabetçi sektörde kariyerinizi hızlandıracaksınız.</p>
+                            <p>Her ligde performans antrenörlüğü olanaklarına başvurmak için benzersiz bir konumda olacak ve bu rekabetçi sektörde kariyerinizi hızlandıracaksınız.</p>
                         </div>
                     </div>
                     <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f3c-40449f38" class="standard-grid-card">
@@ -467,7 +478,7 @@
                             <p>
                                 <strong>6.⁠ ⁠Tutkunuzu Atesleyin</strong>
                             </p>
-                            <p>Antrenorluk ve atletik performans uygulamalarina olan tutkunuzu yeniden alevlendireceksiniz. Cünkü kendi yeteneklerinize daha fazla güveneceksiniz.</p>
+                            <p>antrenörluk ve atletik performans uygulamalarina olan tutkunuzu yeniden alevlendireceksiniz. Çünkü kendi yeteneklerinize daha fazla güveneceksiniz.</p>
                         </div>
                     </div>
                 </div>
@@ -527,9 +538,9 @@
                         <span class="lowercase"></span>
                     </div>
                     <h1 class="course-heading single-color">
-                        Hala Aklinda Sorular Var. 
+                        Hala Aklında Sorular Var mı? 
                         <br/>
-                        Benimle Iletisime Gec
+                        Benimle İletişime Geç
                     </h1>
                 </div>
                 <div class="form-block w-form">
@@ -574,9 +585,13 @@
                                 <div class="rl-text-style-regular">Güncel değişikliklerden haberdar olmak için kayıt olun.</div>
                                 <div class="rl_footer1_spacing-block-2"></div>
                                 <div class="rl_footer1_form-block w-form">
-                                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="rl_footer1_form" data-wf-page-id="63c002148e38eb3240449f38" data-wf-element-id="5af9bc24-629b-3c81-1feb-65c98bcb359a">
-                                        <input class="rl-form-input w-input" maxlength="256" name="Footer-1-Email" data-name="Footer 1 Email" placeholder="Emaıl Adresinizi Girin" type="email" id="Footer-1-Email" required=""/>
-                                        <a href="#" class="rl-button-secondary-small w-button">Abone Ol</a>
+                                    <form  action="{{ route('create') }}" method="POST" id="sub-form" name="sub form" data-name="Sub Form" class="f-contact-form" data-wf-page-id="63c002148e38eb3240449f38" data-wf-element-id="d5128b28-e07b-767e-6a8f-99386bfab850">
+                                        @csrf
+                                        <input class="rl-form-input w-input" maxlength="256" name="subemail" data-name="subemail" placeholder="Email Adresinizi Girin" type="email" id="subemail" required=""/>
+                                    <div class="sub__wrapper">
+                                        <a style="cursor: pointer" onclick="document.getElementById('sub-form').submit()"><span>Abone Ol!</span></a>
+                                    </div>
+                                
                                     </form>
                                     <div class="rl_footer1_spacing-block-3"></div>
                                     <div class="rl-text-style-tiny">Abone olarak Serhat Güneş'ten güncellemeler almayı kabul etmiş olursunuz.</div>
@@ -622,6 +637,26 @@
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=637c53a8eb2c7a383d9cd1c6" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/js/webflow.20c4702b3.js" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+@if(Session::has('submessage'))
+    <script>
+        Swal.fire({
+title: "Abone olundu!",
+text: "Gelismelerden sizi haberdar edecegiz",
+icon: "success"
+});
+</script>
+@endif
+@if (Session::has('errormessage'))
+    <script>
+        Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "{{Session::get('errormessage')}}",
+});
+    </script>
+@endif
     <script>
     type = "text/javascript" >
     particlesJS("particles-js",

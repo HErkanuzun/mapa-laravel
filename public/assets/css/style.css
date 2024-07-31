@@ -802,7 +802,8 @@ html {
     .w-container {
       max-width: 728px;
     }
-  
+    
+
     .w-hidden-main {
       display: inherit !important;
     }
@@ -1834,7 +1835,11 @@ html {
     clear: none;
     margin-left: 15px;
   }
-  
+  .logo {
+    width:125px;
+    min-width: 75px;
+    aspect-ratio: 1/1;
+  }
   .w-nav {
     z-index: 1000;
     background: #ddd;
@@ -1868,11 +1873,14 @@ html {
     text-decoration: none;
     display: inline-block;
     position: relative;
+    text-wrap: nowrap;
   }
   
-  .w-nav-link.w--current {
-    color: #0082f3;
+  .w-nav-link:hover{
+    color: #E73725;
+    text-decoration: none;
   }
+
   
   .w-nav-menu {
     float: right;
@@ -1934,7 +1942,7 @@ html {
     float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+    -tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -5660,7 +5668,7 @@ html {
     background-color: #15171b;
     border-radius: 32px;
     padding: 6px 20px;
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 700;
     display: inline-block;
   }
@@ -5668,7 +5676,7 @@ html {
   .blue-pill.small-pill {
     margin-bottom: 12px;
     padding: 0 16px;
-    font-size: 1.2em;
+    font-size: 12px;
   }
   
   .blue-pill.small-pill.earlybird {
@@ -5696,8 +5704,6 @@ html {
     background-color: #bef0c6;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left:1em !important;
-    margin-right:1em !important;
     font-size: 1.5em;
   }
   
@@ -6066,6 +6072,113 @@ html {
     line-height: 1.2;
   }
   
+  .nav__wrapper{
+    display: flex;
+  }
+    
+  .nav-ul {
+    display: table;
+    white-space: nowrap;
+  }
+  
+  .nav-ul-li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 10px;
+    position: relative;
+  }
+  
+  .nav-ul-li a {
+    text-decoration: none !important; 
+    color: rgba(255,255,255,1) !important;
+    position: relative;
+    padding: 16px 7px;
+    border-top: 2px solid rgba(255,255,255,0);
+    border-bottom: 2px solid rgba(255,255,255,0);
+    transition: padding .3s,border-color .3s;
+    
+  }
+  
+  .nav-ul-li a:focus, a:hover {
+    padding: 5px 7px;
+    color: var(--midnight-blue-2) !important;
+    border-color: rgba(255,255,255,1);
+    outline: none;
+  }
+  
+  .nav-ul-li a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 0;
+    color: rgba(255,255,255,0);
+    border-left: 2px solid rgba(255,255,255,0);
+    content: attr(data-text);
+    transition: max-height .3s,border-color 0s;
+  }
+  
+  .nav-ul-li a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    max-height: 0;
+    color: rgba(255,255,255,0);
+    border-right: 2px solid rgba(255,255,255,0);
+    content: attr(data-text);
+    transition: max-height .3s,border-color 0s;
+  }
+  
+  .nav-ul-li a::focus::before, a:hover::before, a:focus::after, a:hover::after {
+    max-height: 100%;
+    transition-delay: .28s;
+    border-color: rgba(255,255,255,1);
+  }
+
+  
+  .sub__wrapper > a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .sub__wrapper > a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .sub__wrapper > a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff003b;
+    transition: all .35s;
+  }
+  
+  .sub__wrapper > a:hover{
+    color: #fff;
+  }
+  
+  .sub__wrapper > a:hover:after{
+    width: 100%;
+  }
+  
   .league-logos-div {
     grid-column-gap: 2em;
     grid-row-gap: 0em;
@@ -6077,6 +6190,12 @@ html {
   .logo-holder {
     width: 8em;
     height: auto;
+  }
+  .logo {
+    display: flex !important;
+    width:100px;
+    min-width: 75px;
+    aspect-ratio: 1/1;
   }
   
   .nfl-bw {
