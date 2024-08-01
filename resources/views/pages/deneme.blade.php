@@ -12,6 +12,8 @@
     <div class="container">
         @livewire('apply-form-component')
     </div>
+
+    
     @livewireScripts
 </body>
 </html>

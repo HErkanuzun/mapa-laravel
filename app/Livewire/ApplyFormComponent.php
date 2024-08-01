@@ -43,7 +43,6 @@ class ApplyFormComponent extends Component
         ];
         Mail::to('herkanuzun@gmail.com')->send(new InfoFormSubmitted($data));
 
-        dd('mail given');
         // Reset form fields
        $this->reset(['name', 'email', 'experience', 'sector', 'infoSource', 'interestReason', 'hindrance']);
 
@@ -51,7 +50,7 @@ class ApplyFormComponent extends Component
         $this->showModal = false;
 
         // Show a success message or SweetAlert
-        session()->flash('message', 'Form submitted successfully!');
+        $this->dispatch('livewire:success');
     }
 
     public function render()
@@ -59,3 +58,4 @@ class ApplyFormComponent extends Component
         return view('livewire.apply-form-component');
     }
 }
+

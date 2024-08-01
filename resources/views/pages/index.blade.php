@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html data-wf-domain="" data-wf-page="63c002148e38eb3240449f38" data-wf-site="637c53a8eb2c7a383d9cd1c6">
 <head>
+    @vite(['resources/css/app.css','resources/js/app.js'])
     <meta charset="utf-8"/>
     <title>Serhat Güneş</title>
     <meta content="An 8 Week Live Online Sport Performance Masterclass" name="description"/>
@@ -14,7 +15,6 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link href="{{asset('assets')}}/css/style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script src="https://kit.fontawesome.com/ad14c652f2.js" crossorigin="anonymous"></script>
@@ -63,7 +63,6 @@
         "hideDecimalForWholeNumbers": false
     };
     </script>
-        @vite(['resources/css/app.css','resources/js/app.js'])
     @livewireStyles
 </head>
 <body class="body"> 
@@ -125,14 +124,13 @@
                     
                         alana etki edip farkinizi gosterin, modern atletik performans antrenörü olma yolunda hizinizi katlayin.
                     </p>
-                    <div class="hero-button-div">
-                        <a data-w-id="00546495-6c71-48dd-5197-d40eb8c72618" style="-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="#section5" target="_blank" class="hero-cta w-button">Hemen Baslayin</a>
-                        
-                        
-                        
+                        <div class="container hero-button-div" style="display: flex;
+                        justify-content: center;
+                        align-items: center;">
+                            @livewire('apply-form-component')
                         <p data-w-id="3739c08b-02b2-977c-b3b2-90124a2fdb09" style="opacity:0" class="cohort-p">2024 Sonbahar  Donemi Programi Eylul baslayacaktir.</p>
                         <div data-w-id="f3e07772-a776-209f-9389-1bd4d21031e5" class="hero-sparkle" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63e02af10c95fc0f102c1147_%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%8C%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%202%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.469135701899179" data-duration="0"></div>
-                    </div>
+                        </div>
                     </div>
                     <div data-w-id="76b65fe0-a586-7845-745a-088ea6b30132" style="opacity:0" class="work-proof-div">
                     
@@ -544,7 +542,7 @@
                     </div>
                     <h1 class="course-heading single-color">
                         Hala Aklında Sorular Var mı? 
-                        <br/>
+                        <br>
                         Benimle İletişime Geç
                     </h1>
                 </div>
@@ -624,7 +622,7 @@
                         <div class="rl_footer1_line-divider"></div>
                         <div class="rl_footer1_spacing-block-6"></div>
                         <div class="rl_footer1_bottom-wrapper">
-                            <div class="rl_footer1_credit-text">© 2024 Uygulamalı Performans Koçu. Bütün hakları saklıdır.</div>
+                            <div class="rl_footer1_credit-text">© 2024 Modern Performans Antrenoru Programi. Butun Haklari saklidir.</div>
                             <div class="w-layout-grid rl_footer1_legal-list">
                                 <a href="#" class="rl_footer1_legal-link">Gizlilik Politikası</a>
                                 <a href="#" class="rl_footer1_legal-link">Kullanım Şartları</a>
@@ -642,7 +640,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
     <script src="{{ asset('assets/js/sweetalert-form.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 @if(Session::has('submessage'))
     <script>
         Swal.fire({
@@ -661,6 +659,15 @@ icon: "success"
 });
     </script>
 @endif
+<script>
+    window.addEventListener('livewire:success',(event)=>{
+        Swal.fire({
+        title: "Abone olundu!",
+        text: "Gelismelerden sizi haberdar edecegiz",
+        icon: "success"
+    });
+    })
+</script>
     <script>
     type = "text/javascript" >
     particlesJS("particles-js",

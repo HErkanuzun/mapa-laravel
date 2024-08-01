@@ -1,18 +1,16 @@
 <div>
-    <!-- Button to open modal -->
-    <button type="button" class="btn btn-primary" wire:click="$set('showModal', true)">
-        Başvuru Formu
-    </button>
-
+    
+    <!-- Button to open modal --><!-- HTML !-->
+    <button type="button" class="button-80" role="button" wire:click="$set('showModal', true)">Basvuru Formu</button>
     <!-- Modal -->
     @if($showModal)
-        <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative w-full max-w-md max-h-full">
+        <div id="authentication-modal" tabindex="-1" aria-hidden="true"  class="z-[50999] flex items-center justify-center bg-gray-900 bg-opacity-50 fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full modal-container">
+            <div class="relative w-full max-w-md max-h-full modal-content-container">
                 <!-- Modal content -->
                 <div class="modal-content relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" wire:click="$set('showModal', false)">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 111.414 1.414L11.414 10l4.293 4.293a1 1 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 01-1.414-1.414L8.586 10 4.293 5.707a1 1 010-1.414z" clip-rule="evenodd"></path>
                         </svg>
                     </button>
                     <div class="px-6 py-6 lg:px-8">

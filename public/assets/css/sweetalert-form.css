@@ -116,3 +116,11 @@ label {
     font-size: 16px; /* Yazı boyutu */
     font-weight: bold; /* Kalın yazı tipi */
 }
+
+
+.my-custom-container {
+    /* Özel stil kurallarınızı buraya ekleyin */
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
