@@ -1,0 +1,118 @@
+/* SweetAlert2'ye özel stil */
+.swal2-popup {
+    width: 80vw; /* Popup genişliği: sayfanın %80'i */
+    max-width: 800px; /* Maksimum genişlik */
+    border-radius: 20px; /* Köşe yuvarlama */
+    background-color: #15172b; /* Koyu arka plan rengi */
+    color: #eee; /* Beyaz metin rengi */
+    position: relative; /* Pozisyon ayarı */
+    z-index: 1000; /* Popup'ın diğer öğelerin üstünde görünmesi için */
+}
+
+/* Popup arka planını bulanıklaştırma */
+.swal2-backdrop {
+    backdrop-filter: blur(30px); /* Bulanıklık efekti */
+    background-color: rgba(0, 0, 0, 0.737); /* Koyu opaklık rengi */
+    z-index: 999; /* Popup'ın altında olacak şekilde */
+}
+
+/* Başlık ve Alt Başlık */
+.swal2-title {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    color: #eee;
+    margin-top: 30px;
+}
+
+.swal2-html-container {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #eee;
+    margin-top: 10px;
+}
+
+/* Formun genel düzeni */
+.swal2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* İçeriği ortalar */
+    text-align: center;
+    padding: 20px; /* İç boşluk */
+    border-radius: 20px; /* Köşe yuvarlama */
+    background-color: #15172b; /* Form arka plan rengi */
+    width: 100%; /* Form genişliği */
+    box-sizing: border-box; /* Kenar boşluklarını hesaba katar */
+}
+
+/* Form elemanları */
+.swal2-input, .swal2-select {
+    background-color: #303245; /* Koyu arka plan rengi */
+    border-radius: 12px; /* Köşe yuvarlama */
+    border: 0; /* Kenarlık yok */
+    color: #eee; /* Beyaz metin rengi */
+    font-size: 18px; /* Yazı boyutu */
+    padding: 4px 20px; /* İç boşluk */
+    margin-bottom: 20px; /* Alt boşluk */
+    width: calc(100% - 24px); /* Genişlik ayarı */
+    box-sizing: border-box; /* Kenar boşluklarını hesaba katar */
+}
+
+.swal2-input:focus, .swal2-select:focus {
+    border-color: #dc2f55; /* Odaklanma rengi */
+    box-shadow: 0 0 0 1px #dc2f55; /* Odaklanma kenarlığı */
+}
+
+/* Etiketler */
+label {
+    display: block;
+    color: #eee; /* Etiket rengi */
+    font-family: sans-serif;
+    font-size: 16px; /* Yazı boyutu */
+    font-weight: 600; /* Kalın yazı tipi */
+    margin-bottom: 5px; /* Alt boşluk */
+}
+
+/* Radyo butonları grubu */
+.radio-group {
+    display: flex;
+    flex-direction: column; /* Dikey olarak sıralar */
+    gap: 10px; /* Elemanlar arasında boşluk */
+    width: 100%; /* Genişlik ayarı */
+    padding: 0 48px; /* Kenar boşluğu */
+}
+
+/* Radyo butonları */
+.radio-group label {
+    display: flex;
+    align-items: center; /* Radyo butonları ve etiketleri hizalar */
+    color: #eee; /* Beyaz metin rengi */
+    font-family: sans-serif;
+    font-size: 16px; /* Yazı boyutu */
+}
+
+/* Gönder düğmesi */
+.swal2-confirm {
+    background-color: #08d; /* Gönder düğmesi arka plan rengi */
+    border-radius: 12px; /* Köşe yuvarlama */
+    border: 0; /* Kenarlık yok */
+    color: #eee; /* Beyaz metin rengi */
+    cursor: pointer; /* Fare işareti */
+    font-size: 18px; /* Yazı boyutu */
+    height: 50px; /* Yükseklik */
+    width: 100%; /* Genişlik */
+    text-align: center; /* Metni ortalar */
+    margin-top: 20px; /* Üst boşluk */
+}
+
+.swal2-confirm:active {
+    background-color: #06b; /* Düğmeye tıklama rengi */
+}
+
+/* Validasyon mesajı */
+.swal2-validation-message {
+    color: #dc2f55; /* Hata mesajı rengi */
+    font-size: 16px; /* Yazı boyutu */
+    font-weight: bold; /* Kalın yazı tipi */
+}

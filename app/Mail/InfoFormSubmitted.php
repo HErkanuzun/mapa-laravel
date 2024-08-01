@@ -13,7 +13,6 @@ class InfoFormSubmitted extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $data;
 
     public function __construct($data)
     {
@@ -22,7 +21,8 @@ class InfoFormSubmitted extends Mailable
 
     public function build()
     {
-        return $this->view('emails.form-submitted')
+        return $this->view('mail.info_form_submitted')
+                    ->subject('New Apply Form Submission')
                     ->with('data', $this->data);
     }
 }

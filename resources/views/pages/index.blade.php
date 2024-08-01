@@ -63,6 +63,8 @@
         "hideDecimalForWholeNumbers": false
     };
     </script>
+        @vite(['resources/css/app.css','resources/js/app.js'])
+    @livewireStyles
 </head>
 <body class="body"> 
     <div data-animation="default" class="nav to-hide w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="tiny" style="opacity:0" data-w-id="540b89c0-9999-f3ca-6913-eed00d729269" role="banner" data-duration="400">
@@ -125,6 +127,9 @@
                     </p>
                     <div class="hero-button-div">
                         <a data-w-id="00546495-6c71-48dd-5197-d40eb8c72618" style="-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" href="#section5" target="_blank" class="hero-cta w-button">Hemen Baslayin</a>
+                        
+                        
+                        
                         <p data-w-id="3739c08b-02b2-977c-b3b2-90124a2fdb09" style="opacity:0" class="cohort-p">2024 Sonbahar  Donemi Programi Eylul baslayacaktir.</p>
                         <div data-w-id="f3e07772-a776-209f-9389-1bd4d21031e5" class="hero-sparkle" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63e02af10c95fc0f102c1147_%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%8C%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%202%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.469135701899179" data-duration="0"></div>
                     </div>
@@ -790,5 +795,6 @@ icon: "success"
     requestAnimationFrame(update);
     ;
     </script>
+    @livewireScripts
 </body>
 </html>

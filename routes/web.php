@@ -18,13 +18,13 @@ Route::middleware([
 
 
 
-Route::post('/', [HomeController::class, 'index'])->name('index');
 
 Route::post('/sendemail', [MailController::class, 'sendContactEmail'])->name('sendContactEmail');
 Route::post('/sendinfomail', [MailController::class, 'sendInfoEmail'])->name('sendInfoEmail');
 Route::post('/sendmailto', [HomeController::class, 'create'])->name('create');
 
 Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('/deneme', [HomeController::class, 'deneme'])->name('deneme');
 
 Route::get('/dasboard/comment/index', [CommentController::class, 'index'])->name('comment_index');
 Route::get('/dasboard/comment/create', [CommentController::class, 'create'])->name('comment_create');
