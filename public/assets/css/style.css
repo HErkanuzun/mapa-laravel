@@ -3648,9 +3648,10 @@ html {
   
   .particles-div {
     z-index: 0;
-    width: 100%;
+    width: 120%;
     height: 100vh;
     position: absolute;
+    background: rgba(0,0,0,0.4);
     top: 0%;
     bottom: 0%;
     left: 0%;
@@ -8600,6 +8601,7 @@ html {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
 }
 
 .button-80:not(:disabled):hover {

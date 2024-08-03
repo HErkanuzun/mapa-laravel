@@ -124,7 +124,7 @@
                     
                         alana etki edip farkinizi gosterin, modern atletik performans antrenörü olma yolunda hizinizi katlayin.
                     </p>
-                        <div class="container hero-button-div" style="display: flex;
+                        <div data-w-id="0114b172-b1b4-16f2-204b-21aeddbe5e33" class="container hero-button-div" style="display: flex;
                         justify-content: center;
                         align-items: center;">
                             @livewire('apply-form-component')
@@ -662,8 +662,8 @@ icon: "success"
 <script>
     window.addEventListener('livewire:success',(event)=>{
         Swal.fire({
-        title: "Abone olundu!",
-        text: "Gelismelerden sizi haberdar edecegiz",
+        title: "Başvurunuz Başarıyla Alındı",
+        text: "Başvurunuz başarıyla alınmıştır. Gelişmelerden sizi bilgilendireceğiz.",
         icon: "success"
     });
     })
