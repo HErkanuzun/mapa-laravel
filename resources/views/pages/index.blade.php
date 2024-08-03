@@ -76,19 +76,19 @@
             <div class="nav_wrapper">
                 <ul class="nav-ul">
                     <li class="nav-ul-li">
-                      <a href="#section1" data-text="Çalışma Şartları">Çalışma Şartları</a>
+                      <a href="#calisma-sartlarimiz" data-text="Çalışma Şartları">Çalışma Şartları</a>
                     </li>
                     <li class="nav-ul-li">
-                      <a href="#section2" data-text="Hakkımda">Hakkımda</a>
+                      <a href="#hakkimda" data-text="Hakkımda">Hakkımda</a>
                     </li>
                     <li class="nav-ul-li">
-                      <a href="#section3" data-text="Program Hakkında">Program Hakkında</a>
+                      <a href="#program-hakkinda" data-text="Program Hakkında">Program Hakkında</a>
                     </li>
                     <li class="nav-ul-li">
-                      <a href="#section4" data-text="Programın Hedefleri">Programın Hedefleri</a>
+                      <a href="#program-hedefleri" data-text="Programın Hedefleri">Programın Hedefleri</a>
                     </li>
                     <li class="nav-ul-li">
-                      <a href="#section5" data-text="İletişim">İletişim</a>
+                      <a href="#iletisim" data-text="İletişim">İletişim</a>
                     </li>
                 </ul>
                 <div class="rl_navbar2_menu-button w-nav-button">
@@ -105,12 +105,12 @@
     </div>
     <div class="project-wrapper">
         <div class="x-section is-hero">
-            <img class="bg-img"src="{{asset('assets')}}/img/personal-image2.JPG" >
+            <img class="bg-img"src="{{asset('assets')}}/img/serhat-gunes.JPG" >
             <div class="x-container is-hero">
                 <div class="hero-bgimg">
                     <div class="hero-text-div">
                     <div data-w-id="0114b172-b1b4-16f2-204b-21aeddbe5e2e" style="opacity:0;-webkit-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="hero-glow-div">
-                        <h1 class="hero-title">MAPA'ya Hoşgeldiniz.</h1>
+                        <h2 class="hero-title">MAPA'ya Hoşgeldiniz.</h2>
                     </div>
                     
                     <div class="div-block-3">
@@ -145,7 +145,7 @@
             <div id="particles-js" class="particles-div"></div>
             <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63e1858c18c70e4abb60e37f_wave%20(30).svg" loading="lazy" style="-webkit-transform:translate3d(0, 90px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" data-w-id="f23dc549-55e9-4ed4-409a-f23ef9ebeb4f" alt="" class="wave"/>
         </div>
-        <div id="section1" class="x-section">
+        <div id="calisma-sartlarimiz" class="x-section">
             <div class="x-container less-top-margin">
                 <div class="introduction-div">
                     <i class="fa-solid fa-medal fa-2xl" style="padding-bottom:1em"></i>
@@ -201,13 +201,13 @@
                 </div>
             </div>
         </div>
-        <div id="section2" class="x-section is-dark">
+        <div id="hakkimda" class="x-section is-dark">
             <div class="x-container">
                 <div data-w-id="0114b172-b1b4-16f2-204b-21aeddbe5e3c" class="introduction-div">
                     <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63edffdd8523a5b55c59c564_contact%20(1).svg" alt="" class="icon-5 bigger"/>
                     <h2 class="section-heading white">Ben Kimim ?</h2>
                     <div class="ramsey-img-div">
-                        <img src="{{asset('assets')}}/img/personal-img-close.jpeg" alt="" style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="ramsey-img"/>
+                        <img src="{{asset('assets')}}/img/serhat-gunes-close.jpeg" alt="" style="-webkit-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.8, 0.8, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="ramsey-img"/>
                     </div>
                     <p class="paragraph-text white">
                         
@@ -230,7 +230,7 @@
 
                         <br/>
                     </p>
-                    <img src="{{asset('assets')}}/img/personal-img1.JPG" alt="" class="trophy-img"/>
+                    <img src="{{asset('assets')}}/img/serhat-gunes1.JPG" alt="" class="trophy-img"/>
                     <p class="paragraph-text white">
                         Ben Türkiye'nin en iyi atletik performans antrenörü veya çalıştığım takımlardaki başarıların sebebi olan kişi olduğumu iddia etmiyorum. Ama yukarıda sıraladığım eğitim ve çalışma geçmişimin bana çok geniş bir tecrübe
                         ve bilgi kattığını rahatlıkla söyleyebilirim. Sizin gelişiminiz
@@ -242,7 +242,7 @@
                 </div>
             </div>
         </div>
-        <div id="section3" class="x-section">
+        <div id="program-hakkinda" class="x-section">
             <div class="x-container">
                 <div  class="the-course-div">
                     <div class="blue-pill center">PROGRAM HAKKINDA</div>
@@ -306,7 +306,7 @@
                 <div class="line-break darker bottom-margin"></div>
             </div>
             <div class="x-section is-dark no-gradient">
-    <div id="section4" class="x-container">
+    <div id="program-hedefleri" class="x-container">
         <div  class="whats-in-div">
             <div class="blue-pill center">Programın hedefleri</div>
             <p class="paragraph-text white">
@@ -404,7 +404,7 @@
                         disiplinli atletik performans antrenörleri bu programa katılabilir.
                     </div>
                     <div class="testimonial-info-two">
-                        <img src="{{asset('assets')}}/img/personal-img-close.jpeg" alt="" class="testimonial-author-image-three"/>
+                        <img src="{{asset('assets')}}/img/serhat-gunes-close.jpeg" alt="" class="testimonial-author-image-three"/>
                     </div>
                 </div>
             </div>
@@ -533,7 +533,7 @@
     </div>
 </div>
 @endisset
-        <div id="section5" class="f-section-large">
+        <div id="iletisim" class="f-section-large">
             <div class="f-contact-content">
                 <div class="the-course-div">
                     <div class="blue-pill center">
