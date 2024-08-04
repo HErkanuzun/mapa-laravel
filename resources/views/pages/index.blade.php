@@ -3,7 +3,39 @@
 <head>
     @vite(['resources/css/app.css','resources/js/app.js'])
     <meta charset="utf-8"/>
-    <title>Serhat Güneş</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="6-haftalık yoğun mentorluk programı ile kariyerinize herkesten önde başlayın. Modern atletik performans antrenörü olun ve farkınızı gösterin.">
+    <meta name="keywords" content="atletik performans, mentorluk programı, spor bilimi, antrenörlük, Serhat Güneş">
+    <meta name="author" content="Serhat Güneş">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Modern Atletik Performans Antrenörü Programı - Serhat Güneş">
+    <meta property="og:description" content="6-haftalık yoğun mentorluk programı ile kariyerinize herkesten önde başlayın. Modern atletik performans antrenörü olun ve farkınızı gösterin.">
+    <meta property="og:image" content="{{asset('assets')}}/img/serhat-gunes.JPG">
+    <meta property="og:url" content="https://coachgunes.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modern Atletik Performans Antrenörü Programı - Serhat Güneş">
+    <meta name="twitter:description" content="6-haftalık yoğun mentorluk programı ile kariyerinize herkesten önde başlayın. Modern atletik performans antrenörü olun ve farkınızı gösterin.">
+    <meta name="twitter:image" content="{{asset('assets')}}/img/serhat-gunes.JPG">
+
+    <link rel="canonical" href="https://coachgunes.com/">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <title>Modern atletik performans antrenörü-Serhat Güneş</title>
     <meta content="An 8 Week Live Online Sport Performance Masterclass" name="description"/>
     <meta content="Serhat Güneş" property="og:title"/>
     <meta content="An 8 Week Live Online Sport Performance Masterclass" property="og:description"/>
@@ -124,13 +156,16 @@
                     
                         alana etki edip farkinizi gosterin, modern atletik performans antrenörü olma yolunda hizinizi katlayin.
                     </p>
-                        <div data-w-id="0114b172-b1b4-16f2-204b-21aeddbe5e33" class="container hero-button-div" style="display: flex;
+
+                        <div  class="container hero-button-div" style="display: flex;
                         justify-content: center;
                         align-items: center;">
                             @livewire('apply-form-component')
                         <p data-w-id="3739c08b-02b2-977c-b3b2-90124a2fdb09" style="opacity:0" class="cohort-p">2024 Sonbahar  Donemi Programi Eylul baslayacaktir.</p>
                         <div data-w-id="f3e07772-a776-209f-9389-1bd4d21031e5" class="hero-sparkle" data-animation-type="lottie" data-src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63e02af10c95fc0f102c1147_%E1%84%8F%E1%85%A5%E1%86%B7%E1%84%91%E1%85%A9%E1%84%8C%E1%85%B5%E1%84%89%E1%85%A7%E1%86%AB%202%20(1).json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="2.469135701899179" data-duration="0"></div>
                         </div>
+
+                        
                     </div>
                     <div data-w-id="76b65fe0-a586-7845-745a-088ea6b30132" style="opacity:0" class="work-proof-div">
                     
@@ -418,74 +453,74 @@
         </div>
         <div class="line-break darker"></div>
         <div class="w-layout-grid details-grid end-of-course">
-                    <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f0f-40449f38" class="standard-grid-card">
-                        <div class="grid-icon-2">
-                            <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63cfd23606836d3e0884ad8a_brain%20(1).svg" alt="" class="image-4"/>
-                        </div>
-                        <div class="standard-grid-text w-richtext">
-                            <p>
-                                <strong>1.⁠ ⁠Bilginizi Geliştirin</strong>
-                            </p>
-                            <p>Sektörünüzde uzman olmak için içerik uzmanlığınızı derinleştirecek ve temel alanlardaki bilginizi geliştireceksiniz.</p>
-                        </div>
-                    </div>
-                    <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f18-40449f38" class="standard-grid-card">
-                        <div class="grid-icon-2">
-                            <img src="https://cdn.prod.website-files.com/636bc731d39d3043f0cf2d36/636d36b17232671a01644218_latch.2.case.svg" alt="" class="image-4"/>
-                        </div>
-                        <div class="standard-grid-text w-richtext">
-                            <p>
-                                <strong>2.⁠ ⁠Güveninizi Arttırın</strong>
-                            </p>
-                            <p>Teorik öğrenimi antrenörlük pratiğine dönüştürme ve bu becerileri birlikte çalıştığınız sporcularla kullanma konusunda özgüvene sahip olacaksınız.</p>
-                        </div>
-                    </div>
-                    <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f21-40449f38" class="standard-grid-card">
-                        <div class="grid-icon-2">
-                            <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63cfd176189af1a0aa145ff5_network.svg" alt="" class="image-4"/>
-                        </div>
-                        <div class="standard-grid-text w-richtext">
-                            <p>
-                                <strong>3.⁠ ⁠Ağa Katılın</strong>
-                            </p>
-                            <p>Öğrenmenizi hızlandırmanıza ve kariyerinizi geliştirmenize yardımcı olabilecek bir ağa erişim sağlayarak becerilerinizi geliştirme konusunda daha güçlü bir konumda olacaksınız.</p>
-                        </div>
-                    </div>
-                    <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f2a-40449f38" class="standard-grid-card">
-                        <div class="grid-icon-2">
-                            <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/639b2df2e6cbfead334373b2_figure.stand.line.dotted.figure.stand.svg" alt="" class="image-4"/>
-                        </div>
-                        <div class="standard-grid-text w-richtext">
-                            <p>
-                                <strong>⁠Topluluğunuzu bulun</strong>
-                            </p>
-                            <p>Kendilerini ve çevrelerindekileri daha büyük başarıya taşımak için hepsi aynı arzuyla motive olan bir antrenörler topluluğuna katılacaksınız.</p>
-                        </div>
-                    </div>
-                    <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f33-40449f38" class="standard-grid-card">
-                        <div class="grid-icon-2">
-                            <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63cfd278011b34ef9ab1d5fa_person.crop.square.filled.and.at.rectangle.svg" alt="" class="image-4"/>
-                        </div>
-                        <div class="standard-grid-text w-richtext">
-                            <p>
-                                <strong>5.⁠ ⁠Fırsatlarınızı Genişletin</strong>
-                            </p>
-                            <p>Her ligde performans antrenörlüğü olanaklarına başvurmak için benzersiz bir konumda olacak ve bu rekabetçi sektörde kariyerinizi hızlandıracaksınız.</p>
-                        </div>
-                    </div>
-                    <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f3c-40449f38" class="standard-grid-card">
-                        <div class="grid-icon-2">
-                            <img src="https://cdn.prod.website-files.com/637c53a8eb2c7a383d9cd1c6/63cfd2117c1522f3a3d23dab_bolt%20(4).svg" alt="" class="image-4"/>
-                        </div>
-                        <div class="standard-grid-text w-richtext">
-                            <p>
-                                <strong>6.⁠ ⁠Tutkunuzu Atesleyin</strong>
-                            </p>
-                            <p>antrenörluk ve atletik performans uygulamalarina olan tutkunuzu yeniden alevlendireceksiniz. Çünkü kendi yeteneklerinize daha fazla güveneceksiniz.</p>
-                        </div>
-                    </div>
+            <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f0f-40449f38" class="standard-grid-card">
+                <div class="grid-icon-2">
+                    <i class="fa-solid fa-book fa-xl"></i>
                 </div>
-        <div class="line-break darker bottom-margin"></div>
+                <div class="standard-grid-text w-richtext">
+                    <p>
+                        <strong>1.⁠ ⁠Bilginizi Geliştirin</strong>
+                    </p>
+                    <p>Sektörünüzde uzman olmak için içerik uzmanlığınızı derinleştirecek ve temel alanlardaki bilginizi geliştireceksiniz.</p>
+                </div>
+            </div>
+            <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f18-40449f38" class="standard-grid-card">
+                <div class="grid-icon-2">
+                    <i class="fa-solid fa-screwdriver-wrench fa-xl"></i>
+                </div>
+                <div class="standard-grid-text w-richtext">
+                    <p>
+                        <strong>2.⁠ ⁠Güveninizi Arttırın</strong>
+                    </p>
+                    <p>Teorik öğrenimi antrenörlük pratiğine dönüştürme ve bu becerileri birlikte çalıştığınız sporcularla kullanma konusunda özgüvene sahip olacaksınız.</p>
+                </div>
+            </div>
+            <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f21-40449f38" class="standard-grid-card">
+                <div class="grid-icon-2">
+                    <i class="fa-solid fa-network-wired fa-xl"></i>
+                </div>
+                <div class="standard-grid-text w-richtext">
+                    <p>
+                        <strong>3.⁠ ⁠Ağa Katılın</strong>
+                    </p>
+                    <p>Öğrenmenizi hızlandırmanıza ve kariyerinizi geliştirmenize yardımcı olabilecek bir ağa erişim sağlayarak becerilerinizi geliştirme konusunda daha güçlü bir konumda olacaksınız.</p>
+                </div>
+            </div>
+            <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f2a-40449f38" class="standard-grid-card">
+                <div class="grid-icon-2">
+                    <i class="fa-solid fa-group-arrows-rotate fa-xl"></i>
+                </div>
+                <div class="standard-grid-text w-richtext">
+                    <p>
+                        <strong>4. ⁠Topluluğunuzu bulun</strong>
+                    </p>
+                    <p>Kendilerini ve çevrelerindekileri daha büyük başarıya taşımak için hepsi aynı arzuyla motive olan bir antrenörler topluluğuna katılacaksınız.</p>
+                </div>
+            </div>
+            <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f33-40449f38" class="standard-grid-card">
+                <div class="grid-icon-2">
+                    <i class="fa-solid fa-address-card fa-xl"></i>
+                </div>
+                <div class="standard-grid-text w-richtext">
+                    <p>
+                        <strong>5.⁠ ⁠Fırsatlarınızı Genişletin</strong>
+                    </p>
+                    <p>Her ligde performans antrenörlüğü olanaklarına başvurmak için benzersiz bir konumda olacak ve bu rekabetçi sektörde kariyerinizi hızlandıracaksınız.</p>
+                </div>
+            </div>
+            <div id="w-node-_0114b172-b1b4-16f2-204b-21aeddbe5f3c-40449f38" class="standard-grid-card">
+                <div class="grid-icon-2">
+                    <i class="fa-solid fa-fire fa-xl"></i>
+                </div>
+                <div class="standard-grid-text w-richtext">
+                    <p>
+                        <strong>6.⁠ ⁠Tutkunuzu Atesleyin</strong>
+                    </p>
+                    <p>antrenörluk ve atletik performans uygulamalarina olan tutkunuzu yeniden alevlendireceksiniz. Çünkü kendi yeteneklerinize daha fazla güveneceksiniz.</p>
+                </div>
+            </div>
+        </div>
+<div class="line-break darker bottom-margin"></div>
         
 
     </div>

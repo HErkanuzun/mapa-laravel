@@ -1,7 +1,7 @@
 <div>
     
     <!-- Button to open modal --><!-- HTML !-->
-    <button type="button" class="button-80" role="button" wire:click="$set('showModal', true)">Basvuru Formu</button>
+        <button data-w-id="0114b172-b1b4-16f2-204b-21aeddbe5e33" type="button" class="button-80" role="button" wire:click="$set('showModal', true)">Basvuru Formu</button>
     <!-- Modal -->
     @if($showModal)
         <div id="authentication-modal" tabindex="-1" aria-hidden="true"  class="z-[50999] flex items-center justify-center bg-gray-900 bg-opacity-50 fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full modal-container">
